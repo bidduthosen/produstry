@@ -1,0 +1,100 @@
+/* 
+Template Name: Produstry
+Author Name: Biddut Hosen
+Version: 1.0
+
+Table of content
+----------------
+
+******Home page******
+1.header page
+
+*/
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main_color: #ffca36;
+    --second_color: #353535;
+    --p_color: #555;
+}
+a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--second_color);
+}
+ul, ol{
+    list-style-type: none;
+}
+h1,h2,h3,h4,h5,h6,span,p,ul,ol{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+h2{
+    font-size: 35px;
+    font-weight: 300;
+    color: var(--second_color);
+}
+h3{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--second_color);
+}
+p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--p_color);
+}
+.button_design{
+    background-color: var(--main_color);
+    color: var(--second_color);
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    display: inline-block;
+}
+
+/* header part css */
+#top-header{
+    background-color: var(--main_color);
+
+}
+.header_left{
+    padding-top: 16px;
+}
+.welcome_part{
+    background-color: var(--second_color);
+    clip-path: polygon(2% 0, 100% 0%, 98% 100%, 0% 100%);
+    text-align: center;
+    color: white;
+    padding: 15px 0;
+}
+.header_right ul{
+    float: right;
+}
+.header_right ul li{
+    float: left;
+    padding-top: 16px;
+    margin: 0 10px;
+}
+.header_right ul li a{
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    display: block;
+
+
+}
