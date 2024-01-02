@@ -84,17 +84,66 @@ p{
 }
 .header_right ul{
     float: right;
+    padding-top: 12px;
 }
 .header_right ul li{
     float: left;
-    padding-top: 16px;
-    margin: 0 10px;
+    margin: 0 13px;
+    position: relative;
 }
 .header_right ul li a{
-    height: 25px;
-    width: 25px;
+    height: 30px;
+    width: 30px;
     text-align: center;
     display: block;
+    position: relative;
 
+}
+.header_right ul li a i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8px;
+    position: relative;
 
+}
+.header_right ul li:after,
+.header_right ul li:before,
+.header_right ul li a:after,
+.header_right ul li a:before{
+    content: ' ';
+    position: absolute;
+    background: var(--second_color);
+    transform: scale(0);
+    transition: .5s;
+}
+.header_right ul li a:after{
+    height: calc(100% + 10px);
+    width: 1px;
+    top: -5px;
+    left: 0;
+}
+.header_right ul li a:before{
+    height: calc(100% + 10px);
+    width: 1px;
+    top: -5px;
+    right: 0;
+}
+.header_right ul li:after{
+    height: 1px;
+    width: calc(100% + 10px);
+    left: -5px;
+    bottom: 0;
+}
+.header_right ul li:before{
+    height: 1px;
+    width: calc(100% + 10px);
+    left: -5px;
+    top: 0;
+}
+.header_right ul li:hover:after,
+.header_right ul li:hover:before,
+.header_right ul li:hover a:after,
+.header_right ul li:hover a:before{
+    transform: scale(1);
 }
